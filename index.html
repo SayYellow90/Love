@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#060208">
+  <title>Love Heart</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="scene">
+    <form class="name-form" id="nameForm">
+      <label for="nameInput">Tulis nama kamu</label>
+      <div class="input-row">
+        <input id="nameInput" name="name" type="text" maxlength="24"
+               placeholder="Masukkan nama..." autocomplete="name" required>
+        <button type="submit">Tampilkan ♥</button>
+      </div>
+      <p class="hint">Namamu akan muncul di tengah hati.</p>
+    </form>
+
+    <canvas id="loveCanvas" aria-label="Hati yang tersusun dari tulisan cinta"></canvas>
+    <div class="center-name" id="centerName" aria-live="polite"></div>
+    <p class="caption">made with love <span>♥</span></p>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
